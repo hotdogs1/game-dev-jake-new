@@ -1,0 +1,31 @@
+                            t1a08-move-image-jake
+<h3 align=center > My Moving images by Jake</h3>
+
+<script>
+
+document.onkeydown = checkkey;
+
+function checkkey(myEvent) {
+   document.getElementById('myDiv01').innerHTML = 'keyCode:'+myEvent.keyCode
+
+   if (myEvent.keyCode == 38){  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'}    // w = 87
+
+}
+
+</script>
+
+<div id="myDiv01">...</div>
+
+<img id="myImage01" width=40
+src="http://www.animatedimages.org/data/media/600/animated-rocket-and-space-
+shuttle-image-0032.gif" style="position:absolute; left:600px; top:200px">
+
+<img id="myImage02" width=40
+src="http://www.animatedimages.org/data/media/33/animated-alien-and-extrater
+restrial-image-0163.gif" style="position:absolute; left:200px; top:100px">
+
+<input type=button value="Up" onclick="{
+   document.getElementById('myImage01').style.top =
+     parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
+}">
+ 
