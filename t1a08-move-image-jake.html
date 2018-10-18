@@ -48,6 +48,18 @@ function checkKey(myEvent) {
 
    }    // --> arrow = 39
 
+   if (myEvent.keyCode == 40){ 
+      document.getElementById('myImage01').style.down = parseInt(document.getElementById('myImage01').style.down) + 5 + 'px'
+      document.getElementById('myImage01').style.transform= 'rotate(180deg)'
+ 
+
+   }    // --> arrow = 40
+
+   if (myEvent.keyCode == 37){ 
+    document.getElementById('myImage01').style.right = parseInt(document.getElementById('myImage01').style.right) - 5 + 'px'
+    document.getElementById('myImage01').style.transform= 'rotate(270deg)'
+}    // up arrow = 37
+
    if (myEvent.keyCode == 87){ document.getElementById('myImage02').style.top = 
          parseInt(document.getElementById('myImage02').style.top) - 5 + 'px'}    // W = 87
 
@@ -60,7 +72,7 @@ function checkKey(myEvent) {
 <img id="myImage01" width=40 src="http://www.animatedimages.org/data/media/600/animated-rocket-and-space-shuttle-image-0032.gif" 
     style="position:absolute; width:40px; height:120px; left:200px; top:150px">
 
-<img id="myImage02" width=40 src="http://www.animatedimages.org/data/media/33/animated-alien-and-extraterrestrial-image-0163.gif" 
+<img id="myImage02" width=40 src="http://www.animatedimages.org/data/media/422/animated-boxing-image-0023.gif" 
     style="position:absolute; width:40px; height:40px;  left:200px; top:50px">
 
 <input type=button value="Up" onclick="{
