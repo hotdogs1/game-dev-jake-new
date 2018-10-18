@@ -1,0 +1,47 @@
+
+<script>
+document.onmousemove = checkKey;
+let myX 
+let myY
+
+function checkKey(event){
+
+   document.getElementById('myOutput00').innerHTML = 'x: '+event.clientX +
+                   ' y: '+event.clientY
+   myX = event.clientX
+   myY = event.clientY
+   document.getElementById('myDiv01').style.left = myX
+   document.getElementById('myDiv01').style.top = myY
+}
+
+
+</script>
+
+
+
+<h2 align=center> Tons of Events by Jake</h2>
+
+<div id="myDiv01"  style="background:yellow; float:left; position:relative; width:200px; height:40px;  left:0px; top:0px" onMouseMove="{
+    document.getElementById('myDiv01').style.left = myX
+    document.getElementById('myDiv01').style.top = myY
+}">Mouse Drag</div>
+
+<div id="myOutput00">...</div><br><br>
+
+
+
+<div id="myDiv01"  style="background:lime; width:90; height:40; float:left" onDblClick="{
+    document.getElementById('myOutput01').innerHTML = 'Double clicked event activated'
+}">Double Click this div</div>
+
+<div id="myOutput01">...</div><br><br>
+
+
+
+
+<input type=text value="Change me" onChange="{
+    document.getElementById('myOutput02').innerHTML = 
+     'You changed the text to: ' + this.value 
+}">
+
+<div id="myOutput02">...</div>
