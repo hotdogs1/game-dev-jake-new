@@ -1,0 +1,17 @@
+<script>
+function myFun(myIn){
+  return myIn + '<br>'
+}
+
+</script>
+<h2 align=center>Passing to functions by jake</h2>
+
+<input id="myIn" type=text  value="25">
+
+<input type=button value="myFun('Hi')" onclick="{
+   
+   document.getElementById('myOut').innerHTML += myFun('Hi')
+           
+}">
+
+<div id="myOut"></div><br>

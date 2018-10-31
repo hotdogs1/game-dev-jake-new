@@ -1,0 +1,54 @@
+<h2 align=center>String Manipulation functions by Jake</h2>
+
+
+<input id="myIn" type=text size=120 value="The World is good, and a bad World!"><br>
+
+<input type=button value=".toUpperCase()" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+     document.getElementById('myIn').value.toUpperCase()
+           
+}">
+
+
+
+<input type=button value=".replace('World', 'School')" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+     document.getElementById('myIn').value.replace('World', 'School')
+           
+}">
+
+
+<input type=button value=".indexOf('World')" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+     document.getElementById('myIn').value.indexOf('World')
+           
+}">
+
+
+<input type=button value=".split(',')" onclick="{
+  myArray = []
+  myArray = document.getElementById('myIn').value.split(',')
+  document.getElementById('myOut').innerHTML = myArray[0] +'<br>'+myArray[1]
+               
+}">
+
+<input type=button value=".search" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+     document.getElementById('myIn').value.search('World')
+           
+}">
+
+
+
+
+
+
+
+
+<div id="myOut">...</div>
+
+<a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">lookup</a>
