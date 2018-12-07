@@ -1,0 +1,44 @@
+                                      t2a04-background-move-Jake
+<body id="myBody" style="background-repeat:on-repeat; background-size:
+100%" background="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/whatisspacet.jpg">
+
+<script>
+let myGlobalX = 0
+let myClock
+</script>
+
+<input type=button value="test" onclick="{
+  document.getElementById('myBody').style.backgroundPosition ='100px 200px' }">
+
+
+<input id="myButton01" type=button value="background move Right" onclick="{
+  myTemp = 'px px'
+  myGlobalX +=5
+  myTemp =  myGlobalX + 'px 0px'
+  //myTemp =  '0px '+ myGlobalX + 'px'    // to move down only
+  document.getElementById('myBody').style.backgroundPosition =myTemp  }">
+
+<input id="myButton02" type=button value="background move Left" onclick="{
+  myTemp = 'px px'
+  myGlobalX -=5
+  myTemp =  myGlobalX + 'px 0px'
+  //myTemp =  '0px '+ myGlobalX + 'px'    // to move down only
+  document.getElementById('myBody').style.backgroundPosition =myTemp  }">
+
+<input id="myButton03" type=button value="background move Up" onclick="{
+  myTemp = 'px px'
+  myGlobalX -=5
+  myTemp =  '0px '+ myGlobalX + 'px'    // to move down only
+  document.getElementById('myBody').style.backgroundPosition =myTemp  }">
+
+<input id="myButton04" type=button value="background move Down" onclick="{
+  myTemp = 'px px'
+  myGlobalX +=5
+  myTemp =  '0px '+ myGlobalX + 'px'    // to move down only
+  document.getElementById('myBody').style.backgroundPosition =myTemp  }">
+
+<input type=button value="Auto Background" onclick="{
+  clearInterval(myClock)
+  myclock = setInterval(function(){
+     document.getElementById('myButton01').click()
+  }, 100)  }">
