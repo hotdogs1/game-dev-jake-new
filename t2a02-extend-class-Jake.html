@@ -1,0 +1,106 @@
+
+
+<h2 align=center>Javascript Classes EXTENDED by Joseph</h2>
+<input type=text id="myNameInput" placeholder="Your Name" value="Jake">
+<input type=text id="myNameInput2" placeholder="Your Age" value="19">
+<input type=text id="myNameInput3" placeholder="Your Home" value="hammand st in canada">
+<input type=text id="myNameInput4" placeholder="Your Phone Number" value="604-897-7051">
+<input type=text id="myNameInput5" placeholder="Your Studenid" value="2084762">
+<input type=text id="myNameInput6" placeholder="Your Address" value="Korea">
+
+
+
+<input id="myButton1" type="button" value="My information" onclick="{
+	class myAnimal {
+    constructor(passName, passAge ,passHome ,passPhone ,passSTID ,passHouse ) {
+          this.myName =  passName;
+          this.myAge =   passAge;
+          this.myhome = passHome;
+	  this.myPhone = passPhone;
+	  this.mySTID =  passSTID;
+ 	  this.myHouse = passHouse;
+          this.myCode =  passCode;
+
+    }
+
+    myShow(){    
+       document.getElementById('myDiv1').innerHTML = ' Hi, I am '+ this.myName + '. I am ' + this.myAge + ' years old' + ' my actual home is ' + ' this.myhome + ' my Number is ' + 
+this.myPhone + ' my age is ' + this.mySTID + ' my house address is ' + this.myHouse + '
+
+ } }  
+                                                             
+   
+                                                                                 
+   myDog = new myAnimal(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value , document.getElementById('myNameInput3').value,document.getElementById('myNameInput4').value,document.getElementById('myNameInput5').value,document.getElementById('myNameInput6').value,document.getElementById('myNameInput7').value)
+   myDog.myShow()      
+
+                                                 
+}"><br><br>
+
+<div id='myDiv1'>My information is only used in important case</div><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type=text id="NameInput" placeholder="Dog Name" value="Bella">
+<input type=text id="NameInput2" placeholder="Dog Age" value="7">
+<input type=text id="NameInput3" placeholder="Dog Height" value="30">
+<input type=text id="NameInput4" placeholder="Dog Fur Color" value=brown and black"">
+<input type=text id="NameInput5" placeholder="Dog Weight" value="500b">
+<input type=text id="NameInput6" placeholder="Dog Food" value="different every day">
+<input type=text id="NameInput7" placeholder="Dog Toys" value="me">
+
+
+
+<input id="myButton2" type="button" value="My information" 
+onclick="{
+	class myAnimal {
+    constructor(passName, passAge ,passHeight ,passPhone ,passSSN ,passHouse ,passCode) {
+          this.myName =  passName;
+          this.myAge =   passAge;
+          this.myHeight =passHeight;
+	  this.myPhone = passPhone;
+	  this.mySSN =   passSSN;
+ 	  this.myHouse = passHouse;
+	  this.myCode =  passCode;
+
+    }
+
+    myShow(){    
+       document.getElementById('myDiv2').innerHTML = 'My dog name is '+ this.myName + ' and my pet is  ' + this.myAge + ' years old' + ' my dogs height is ' + this.myHeight +'cm' + 
+' your my dog color is ' + 
+this.myPhone + ' your pets weight ' + this.mySSN + ' my pets food is ' + this.myHouse + ' my pets toy is ' + this.myCode
+ 
+ } }  
+                                                             
+   
+                                                                                 
+   myCat = new myAnimal(document.getElementById('NameInput').value, document.getElementById('NameInput2').value , document.getElementById('NameInput3').value
+,document.getElementById('NameInput4').value,document.getElementById('NameInput5').value,document.getElementById('NameInput6').value,
+document.getElementById('NameInput7').value)
+   myCat.myShow()      
+
+                                                 
+}"><br><br>
+
+<div id='myDiv2'> My pets info is mine. </div><br>
+
+
+
+
+
+
